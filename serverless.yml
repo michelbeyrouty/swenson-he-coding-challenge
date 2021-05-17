@@ -10,11 +10,11 @@ provider:
 
 
 functions:
-  createPost:
-    handler: apis/posts/create.create
+  listProduct:
+    handler: apis/products/list.list
     events:
       - http:
-          path: posts
+          path: products
           method: post
           cors: true
 

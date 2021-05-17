@@ -33,7 +33,6 @@ module.exports = {
         }
     },
 
-
     SKU_LIST:{
         CM001: {
             PRODUCT_TYPE: "COFFEE_MACHINE_SMALL",
@@ -195,6 +194,17 @@ module.exports = {
             COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
             PACK_SIZE: "SEVEN_DOZEN"
         },
+    },
+
+    VALIDATION:{
+        TYPE:{
+            listProduct: ['productType:string', "waterLine:boolean", "coffeeFlavor:string", "packSize:string"]
+        },
+        VALUE:{
+            productType: ["COFFEE_MACHINE_LARGE","COFFEE_MACHINE_SMALL", "ESPRESSO_MACHINE", "COFFEE_POD_LARGE", "COFFEE_POD_SMALL", "ESPRESSO_POD"],
+            packSize: ["ONE_DOZEN","THREE_DOZEN", "FIVE_DOZEN", "SEVEN_DOZEN"],
+            coffeeFlavor: ["COFFEE_FLAVOR_VANILLA","COFFEE_FLAVOR_CARAMEL", "COFFEE_FLAVOR_PSL", "COFFEE_FLAVOR_MOCHA", "COFFEE_FLAVOR_HAZELNUT"],
+        }
     }
 
 
