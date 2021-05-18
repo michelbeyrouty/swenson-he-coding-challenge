@@ -5,6 +5,6 @@ module.exports.globals = {
         }
     },
 
-
-     constants: require("./core/constants")
+     constants: require("./core/constants"),
+     _: require("lodash")
 }

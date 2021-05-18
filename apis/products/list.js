@@ -8,8 +8,9 @@ module.exports.list = (event, context, callback) => {
     console.log(JSON.stringify(inputData))
 
     app.apis.helpers.validateRequiredInputs({ 
-        dataArray: inputData,
-        requiredInputsWithTypesList: app.constants.VALIDATION.TYPE.listProduct
+        inputList: inputData,
+        expectedInputsWithTypes: app.constants.VALIDATION.TYPE.listProduct,
+        requiredInputs: app.constants.VALIDATION.REQUIRED.listProduct
      });
 
     const { productType, waterLine, coffeeFlavor, packSize } = inputData;
