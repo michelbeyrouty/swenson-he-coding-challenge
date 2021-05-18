@@ -1,31 +1,31 @@
 module.exports = {
 
     COFFEE_MACHINES: {
-        PRODUCT_TYPE:{
+        productType:{
             COFFEE_MACHINE_LARGE: "COFFEE_MACHINE_LARGE",
             COFFEE_MACHINE_SMALL: "COFFEE_MACHINE_SMALL",
             ESPRESSO_MACHINE: "ESPRESSO_MACHINE"
         },
-        WATER_LINE_COMPATIBLE:{
-            TRUE: "true",
-            FALSE: "false"
+        waterLineCompatible:{
+            TRUE: true,
+            FALSE: false
         }
     },
 
     COFFEE_PODS:{
-        PRODUCT_TYPE:{
+        productType:{
             COFFEE_POD_LARGE: "COFFEE_POD_LARGE",
             COFFEE_POD_SMALL: "COFFEE_POD_SMALL",
             ESPRESSO_POD: "ESPRESSO_POD"
         },
-        COFFEE_FLAVOR:{
+        coffeeFlavor:{
             COFFEE_FLAVOR_VANILLA: "COFFEE_FLAVOR_VANILLA",
             COFFEE_FLAVOR_CARAMEL: "COFFEE_FLAVOR_CARAMEL",
             COFFEE_FLAVOR_PSL: "COFFEE_FLAVOR_PSL",
             COFFEE_FLAVOR_MOCHA: "COFFEE_FLAVOR_MOCHA",
             COFFEE_FLAVOR_HAZELNUT: "COFFEE_FLAVOR_HAZELNUT"
         },
-        PACK_SIZE:{
+        packSize:{
             ONE_DOZEN: "ONE_DOZEN",
             THREE_DOZEN: "THREE_DOZEN",
             FIVE_DOZEN: "FIVE_DOZEN",
@@ -35,164 +35,226 @@ module.exports = {
 
     SKU_LIST:{
         CM001: {
-            PRODUCT_TYPE: "COFFEE_MACHINE_SMALL",
-            MODEL_TYPE: "BASE",
+            productType: "COFFEE_MACHINE_SMALL",
+            modelType: "BASE",
+            name: "CM001",
+            waterLineCompatible: false,
         },
         CM002:{
-            PRODUCT_TYPE: "COFFEE_MACHINE_SMALL",
-            MODEL_TYPE: "PREMIUM"
+            productType: "COFFEE_MACHINE_SMALL",
+            modelType: "PREMIUM",
+            name: "CM002",
+            waterLineCompatible: false,
         },
         CM003:{
-            PRODUCT_TYPE: "COFFEE_MACHINE_SMALL",
-            MODEL_TYPE: "DELUXE",
-            WATER_LINE_COMPATIBLE: "TRUE"
+            productType: "COFFEE_MACHINE_SMALL",
+            modelType: "DELUXE",
+            waterLineCompatible: true,
+            name: "CM003"
         },
         CM101:{
-            PRODUCT_TYPE: "COFFEE_MACHINE_LARGE",
-            MODEL_TYPE: "BASE",
+            productType: "COFFEE_MACHINE_LARGE",
+            modelType: "BASE",
+            name: "CM101",
+            waterLineCompatible: false,
         },
         CM102:{
-            PRODUCT_TYPE: "COFFEE_MACHINE_LARGE",
-            MODEL_TYPE: "PREMIUM",
-            WATER_LINE_COMPATIBLE: "TRUE"
+            productType: "COFFEE_MACHINE_LARGE",
+            modelType: "PREMIUM",
+            waterLineCompatible: true,
+            name: "CM102"
         },
         CM103:{
-            PRODUCT_TYPE: "COFFEE_MACHINE_LARGE",
-            MODEL_TYPE: "DELUXE",
-            WATER_LINE_COMPATIBLE: "TRUE"
+            productType: "COFFEE_MACHINE_LARGE",
+            modelType: "DELUXE",
+            waterLineCompatible: true,
+            name: "CM103"
         },
         EM001:{
-            PRODUCT_TYPE: "ESPRESSO_MACHINE",
-            MODEL_TYPE: "BASE"
+            productType: "ESPRESSO_MACHINE",
+            modelType: "BASE",
+            name: "EM001",
+            waterLineCompatible: false,
         },
         EM002:{
-            PRODUCT_TYPE: "ESPRESSO_MACHINE",
-            MODEL_TYPE: "PREMIUM"
+            productType: "ESPRESSO_MACHINE",
+            modelType: "PREMIUM",
+            name: "EM002",
+            waterLineCompatible: false,
         },
         EM003:{
-            PRODUCT_TYPE: "ESPRESSO_MACHINE",
-            MODEL_TYPE: "DELUXE",
-            WATER_LINE_COMPATIBLE: "TRUE"
+            productType: "ESPRESSO_MACHINE",
+            modelType: "DELUXE",
+            waterLineCompatible: true,
+            name: "EM003"
         },
         CP001:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "ONE_DOZEN",
+            name: "CP001",
+            waterLineCompatible: false,
         },
         CP003:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "THREE_DOZEN",
+            name: "CP003",
+            waterLineCompatible: false,
         },
         CP011:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_CARAMEL",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_CARAMEL",
+            packSize: "ONE_DOZEN",
+            name: "CP011",
+            waterLineCompatible: false,
         },
         CP021:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_PSL",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_PSL",
+            packSize: "ONE_DOZEN",
+            name: "CP021",
+            waterLineCompatible: false,
         },
         CP023:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_PSL",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_PSL",
+            packSize: "THREE_DOZEN",
+            name: "CP023",
+            waterLineCompatible: false,
         },
         CP031:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_MOCHA",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_MOCHA",
+            packSize: "ONE_DOZEN",
+            name: "CP031",
+            waterLineCompatible: false,
         },
         CP033:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_MOCHA",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_MOCHA",
+            packSize: "THREE_DOZEN",
+            name: "CP033",
+            waterLineCompatible: false,
         },
         CP041:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_HAZELNUT",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_HAZELNUT",
+            packSize: "ONE_DOZEN",
+            name: "CP041",
+            waterLineCompatible: false,
         },
         CP043:{
-            PRODUCT_TYPE: "COFFEE_POD_SMALL",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_HAZELNUT",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_SMALL",
+            coffeeFlavor: "COFFEE_FLAVOR_HAZELNUT",
+            packSize: "THREE_DOZEN",
+            name: "CP043",
+            waterLineCompatible: false,
         },
         CP101:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "ONE_DOZEN",
+            name: "CP101",
+            waterLineCompatible: false,
         },
         CP103:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "THREE_DOZEN",
+            name: "CP103",
+            waterLineCompatible: false,
         },
         CP111:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_CARAMEL",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_CARAMEL",
+            packSize: "ONE_DOZEN",
+            name: "CP111",
+            waterLineCompatible: false,
         },
         CP121:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_PSL",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_PSL",
+            packSize: "ONE_DOZEN",
+            name: "CP121",
+            waterLineCompatible: false,
         },
         CP123:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_PSL",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_PSL",
+            packSize: "THREE_DOZEN",
+            name: "CP123",
+            waterLineCompatible: false,
         },
         CP131:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_MOCHA",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_MOCHA",
+            packSize: "ONE_DOZEN",
+            name: "CP131",
+            waterLineCompatible: false,
         },
         CP133:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_MOCHA",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_MOCHA",
+            packSize: "THREE_DOZEN",
+            name: "CP133",
+            waterLineCompatible: false,
         },
         CP141:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_HAZELNUT",
-            PACK_SIZE: "ONE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_HAZELNUT",
+            packSize: "ONE_DOZEN",
+            name: "CP141",
+            waterLineCompatible: false,
         },
         CP143:{
-            PRODUCT_TYPE: "COFFEE_POD_LARGE",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_HAZELNUT",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "COFFEE_POD_LARGE",
+            coffeeFlavor: "COFFEE_FLAVOR_HAZELNUT",
+            packSize: "THREE_DOZEN",
+            name: "CP143",
+            waterLineCompatible: false,
         },
         EP003:{
-            PRODUCT_TYPE: "ESPRESSO_POD",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "THREE_DOZEN"
+            productType: "ESPRESSO_POD",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "THREE_DOZEN",
+            name: "EP003",
+            waterLineCompatible: false,
         },
         EP005:{
-            PRODUCT_TYPE: "ESPRESSO_POD",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "FIVE_DOZEN"
+            productType: "ESPRESSO_POD",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "FIVE_DOZEN",
+            name: "EP005",
+            waterLineCompatible: false,
         },
         EP007:{
-            PRODUCT_TYPE: "ESPRESSO_POD",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "SEVEN_DOZEN"
+            productType: "ESPRESSO_POD",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "SEVEN_DOZEN",
+            name: "EP007",
+            waterLineCompatible: false,
         },
-        EP003:{
-            PRODUCT_TYPE: "ESPRESSO_POD",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "THREE_DOZEN"
+        EP013:{
+            productType: "ESPRESSO_POD",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "THREE_DOZEN",
+            name: "EP013",
+            waterLineCompatible: false,
         },
-        EP003:{
-            PRODUCT_TYPE: "ESPRESSO_POD",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "FIVE_DOZEN"
+        EP015:{
+            productType: "ESPRESSO_POD",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "FIVE_DOZEN",
+            name: "EP015",
+            waterLineCompatible: false,
         },
-        EP003:{
-            PRODUCT_TYPE: "ESPRESSO_POD",
-            COFFEE_FLAVOR: "COFFEE_FLAVOR_VANILLA",
-            PACK_SIZE: "SEVEN_DOZEN"
+        EP017:{
+            productType: "ESPRESSO_POD",
+            coffeeFlavor: "COFFEE_FLAVOR_VANILLA",
+            packSize: "SEVEN_DOZEN",
+            name: "EP017",
+            waterLineCompatible: false,
         },
     },
 
@@ -200,7 +262,7 @@ module.exports = {
         TYPE:{
             listProduct: {
                 "productType": "string" , 
-                "waterLine" : "boolean", 
+                "waterLineCompatible" : "boolean", 
                 "coffeeFlavor" : "string", 
                 "packSize": "string"
             }
